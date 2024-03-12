@@ -1,11 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
-
-
-
-
+## Name : SRIRAM S S
+## Roll no : 212222230150
+## Date of experiment :
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
@@ -34,37 +30,13 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 
-
-
-
-
-
-
-
-
 9.	Click on emulate to start emulation 
-
-
-
-
-
-
 
 
 ![image](https://user-images.githubusercontent.com/36288975/189273273-9bb36ec1-e2e8-4892-8d35-37707332bfdc.png)
 
 
-
-
-
-
-
-
 10.	If no errors are found click on run the program and check the status of various flags in the flags tab as shown below 
-
-
-
-
 
 
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
@@ -78,26 +50,116 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+org 100H
 
+mov AH,0A2H;
+
+mov BH,0B3H;
+
+add AH,BH;
+
+mov [1554H],AH;
+
+ret  
 
 
 ## Output  
- 
+ ![Addition](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/38a0497a-0729-47ac-98aa-932ed1cbcb2d)
 ## Subtraction   of 8 bit numbers  ALP 
+org 100H
+
+mov AH,0C4H;
+
+mov BH,0B2H;
+
+sub AH,BH;
+
+mov [1424h],AH;
+
+ret     
+ 
  
 ## Output  
+![Subtraction](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/86ab92b2-3d3f-4724-a1cc-19292e084397)
+
 ## Multiplication alp 
+org 100H
+
+mov AL,0C4H;
+
+mov BL,0B2H;
+
+mul BL;
+
+mov [1334H],AX;
+
+ret     
  ## Output  
+![Multiplication](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/40208594-9f04-4927-a478-ed7311fc1eea)
 
 
 ## Division alp 
 
+org 100H
+
+mov AL,0D5H;
+
+mov BL,0A2H;
+
+div BL;
+
+mov [1364H],AX;
+
+ret    
 ## Output  
+![Division](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/b519056c-c5c7-420c-a756-c781bfbaf1b2)
+
+## Program for logical  operations
+
+org 100H  
+
+MOV SI,0532H;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+OR AX,BX;
+
+MOV [SI],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H;
+
+AND AX,BX; 
+
+MOV [SI+2],AX;
+
+MOV AX,0A32H;
+
+MOV BX,0B13H; 
+
+XOR AX,BX;    
+
+MOV [SI+4],AX;
+
+MOV AX,0A32H;
+
+NOT AX; 
+
+MOV [SI+6],AX;
+
+ret 
+
+### Output:
+![Logical Operators](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/69b341bd-d8c5-4911-bfac-829daa209c65)
+
 
 
 ## Result :
  
-
+Thus, a program is executed on ALP for the fundamental arithmetic and logical operations.
 
 
 
