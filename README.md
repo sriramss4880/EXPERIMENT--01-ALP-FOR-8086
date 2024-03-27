@@ -49,113 +49,106 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+
+## Addition
+```
 org 100H
-
 mov AH,0A2H;
-
 mov BH,0B3H;
-
 add AH,BH;
-
-mov [1554H],AH;
-
-ret  
-
+HTL
+```
 
 ## Output  
  ![Addition](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/38a0497a-0729-47ac-98aa-932ed1cbcb2d)
-## Subtraction   of 8 bit numbers  ALP 
-org 100H
-
-mov AH,0C4H;
-
-mov BH,0B2H;
-
-sub AH,BH;
-
-mov [1424h],AH;
-
-ret     
  
+## Subtraction 
+```
+org 100H
+mov Ax,7024H;
+mov Bx,5220H;
+sub Ax,Bx;
+HTL
+
+```
  
 ## Output  
-![Subtraction](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/86ab92b2-3d3f-4724-a1cc-19292e084397)
+![Subtraction] ![WhatsApp Image 2024-02-21 at 15 41 40_a54f1b0e](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/7181ec4b-60a3-4572-aa56-058dbb16fc12)
+
 
 ## Multiplication alp 
+```
 org 100H
-
-mov AL,0C4H;
-
-mov BL,0B2H;
-
+mov AL,65H;
+mov BL,08H;
 mul BL;
+HLT
 
-mov [1334H],AX;
-
-ret     
+```
  ## Output  
-![Multiplication](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/40208594-9f04-4927-a478-ed7311fc1eea)
+![Multiplication]  ![WhatsApp Image 2024-02-21 at 15 42 04_20c316eb](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/4ffa4d0e-4c0f-439b-a71d-7ee4f475f035)
+
 
 
 ## Division alp 
-
+```
 org 100H
-
-mov AL,0D5H;
-
-mov BL,0A2H;
-
+mov AL,75H;
+mov BL,06H;
 div BL;
+HLT
 
-mov [1364H],AX;
-
-ret    
+```  
 ## Output  
-![Division](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/b519056c-c5c7-420c-a756-c781bfbaf1b2)
+![Division] ![WhatsApp Image 2024-02-21 at 15 43 10_44cc9e6a](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/9bda73c5-c1e7-4e80-a38b-36d63df70090)
 
 ## Program for logical  operations
 
-org 100H  
+## AND operation
 
-MOV SI,0532H;
+```
+org 100h
+MOV AH,12H;
+MOV BH,45H;
+AND AH,BH
+HLT
 
-MOV AX,0A32H;
+```
 
-MOV BX,0B13H;
+## AND OUTPUT:
+![WhatsApp Image 2024-02-21 at 15 44 19_216bdcd2](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/5b83fc37-c545-4915-8fdc-5086cb88acf7)
 
-OR AX,BX;
+##  OR operation
+```
+org 100h
+MOV AH,56H
+MOV BH,67H
+OR AH,BH
+HLT
+```
+##  OR OUTPUT
+![WhatsApp Image 2024-02-21 at 15 45 39_78eb4d03](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/7099ef0d-e23c-42ee-b566-37cf2d62aea9)
 
-MOV [SI],AX;
+##  NOT operation
+```
+org 100h
+MOV AX,1234H
+NOT AX
+HLT
+```
+##  NOT OUTPUT
+![WhatsApp Image 2024-02-21 at 15 46 43_24bfb6a7](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/66eab738-805c-458e-856c-41f2671a9028)
 
-MOV AX,0A32H;
-
-MOV BX,0B13H;
-
-AND AX,BX; 
-
-MOV [SI+2],AX;
-
-MOV AX,0A32H;
-
-MOV BX,0B13H; 
-
-XOR AX,BX;    
-
-MOV [SI+4],AX;
-
-MOV AX,0A32H;
-
-NOT AX; 
-
-MOV [SI+6],AX;
-
-ret 
-
-### Output:
-![Logical Operators](https://github.com/amal-2006/EXPERIMENT--01-ALP-FOR-8086/assets/148410730/69b341bd-d8c5-4911-bfac-829daa209c65)
-
-
+##  XOR operation 
+```
+org 100h
+MOV AL,99H
+MOV BL,88H
+XOR AL,BL
+HLT
+```
+##  XOR OUTPUT
+![WhatsApp Image 2024-02-21 at 15 50 12_308d693f](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/6d7a3d26-83d5-454f-8df5-e8acfef53b56)
 
 ## Result :
  
