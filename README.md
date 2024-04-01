@@ -49,7 +49,6 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-
 ## Addition
 ```
 org 100H
@@ -149,6 +148,7 @@ HLT
 ```
 ##  XOR OUTPUT
 ![WhatsApp Image 2024-02-21 at 15 50 12_308d693f](https://github.com/kaviya2839/EXPERIMENT--01-ALP-FOR-8086/assets/120553351/6d7a3d26-83d5-454f-8df5-e8acfef53b56)
+
 
 ## Result :
  
